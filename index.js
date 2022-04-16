@@ -5,8 +5,8 @@ const employee = {
 }
 // console.log(employee.name, employee.streetAddress)
 //
-// const employeeCopy0 = {...employee}
 function updateEmployeeWithKeyAndValue(object, key, value) {
+    // const employeeCopy0 = {...employee}
     // object[key] = value
     // return employeeCopy0
     return { ...object, [key]:value }
@@ -21,8 +21,8 @@ function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value) {
 }
 console.log(destructivelyUpdateEmployeeWithKeyAndValue(employee, "streetAddress", "Z District"))
 //
-// const employeeCopy1 = {...employee}
 function deleteFromEmployeeByKey(object, key) {
+    // const employeeCopy1 = {...employee}
     delete {...object[key]}
     return {...object[key]}
 }
